@@ -24,16 +24,8 @@ const qualifications = [
   {
     title: "BSc. Information Technology Management",
     school: "University of Professional Studies, Accra",
-    date: "Aug. 2021 - Aug. 2024",
     detail:
       "Built an Active Directory lab covering OU structure, security groups, GPO deployment, DNS, and departmental file-share permissions.",
-  },
-  {
-    title: "Diploma in Information Technology Management",
-    school: "University of Professional Studies, Accra",
-    date: "Aug. 2019 - Aug. 2021",
-    detail:
-      "Established a formal IT management foundation before moving into enterprise support, systems administration, and service operations.",
   },
 ];
 
@@ -282,7 +274,6 @@ export default function Home() {
             {qualifications.map((item) => (
               <article className="qualification" key={item.title}>
                 <div>
-                  <span>{item.date}</span>
                   <h3>{item.title}</h3>
                   <p className="school">{item.school}</p>
                 </div>
