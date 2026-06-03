@@ -44,6 +44,8 @@ next-env.d.ts
 
 # local verification artifacts
 dev-server*.log
-dev-server.pid
+dev-server*.pid
 mobile-check.png
+special-project-check.png
+tall-check.png
 public/screenshot.png

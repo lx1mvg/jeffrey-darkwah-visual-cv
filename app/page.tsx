@@ -160,6 +160,28 @@ const projects = [
   },
 ];
 
+const specialProjectSignals = [
+  "Special government project exposure",
+  "Endpoint and workstation readiness",
+  "User support and escalation",
+  "Operational documentation",
+];
+
+const fieldPhotos = [
+  {
+    src: "/workstation-setup.jpg",
+    alt: "Laptop and monitor workstation prepared for IT support work",
+    label: "Endpoint setup",
+    caption: "Device staging, access checks, and workstation readiness.",
+  },
+  {
+    src: "/server-dashboard.jpg",
+    alt: "Server Manager dashboard displayed on a monitor",
+    label: "Server support",
+    caption: "Hands-on server tools, device management, and support checks.",
+  },
+];
+
 const certificates = [
   {
     title: "Administer Active Directory Domain Services",
@@ -213,6 +235,7 @@ export default function Home() {
         <nav className="hero-nav" aria-label="CV sections">
           <a href="#qualifications">Qualifications</a>
           <a href="#experience">Experience</a>
+          <a href="#special-project">Special Project</a>
           <a href="#projects">Projects</a>
           <a href="#certificates">Certificates</a>
         </nav>
@@ -230,6 +253,7 @@ export default function Home() {
             <span>Intune MDM</span>
             <span>Service Desk</span>
             <span>IT Controls</span>
+            <span>Gov Project</span>
           </div>
         </div>
       </section>
@@ -337,6 +361,39 @@ export default function Home() {
                   </ul>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="special-project-band" id="special-project">
+        <div className="special-orbit" aria-hidden="true" />
+        <div className="wrap special-project-layout">
+          <div className="special-copy">
+            <p className="section-kicker">Special project exposure</p>
+            <h2>Contributed IT support on one of Ghana&apos;s special government projects.</h2>
+            <p>
+              Supported a nationally significant project environment by helping
+              keep devices, access, technical support workflows, and operational
+              documentation ready for users and project teams.
+            </p>
+            <div className="project-pill-row" aria-label="Special project signals">
+              {specialProjectSignals.map((signal) => (
+                <span key={signal}>{signal}</span>
+              ))}
+            </div>
+          </div>
+
+          <div className="field-gallery" aria-label="Workplace support photos">
+            {fieldPhotos.map((photo, index) => (
+              <figure className="field-photo-card" key={photo.src}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={photo.src} alt={photo.alt} />
+                <figcaption>
+                  <span>0{index + 1} / {photo.label}</span>
+                  <p>{photo.caption}</p>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
