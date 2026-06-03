@@ -240,9 +240,22 @@ p {
   align-items: start;
 }
 
-.intro-grid > p {
+.profile-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.profile-copy > p {
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+.personal-note {
+  border-left: 4px solid var(--baby-strong);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 18px 20px;
+  box-shadow: 0 18px 42px rgba(14, 82, 120, 0.08);
 }
 
 .band {

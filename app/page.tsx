@@ -225,7 +225,7 @@ export default function Home() {
           <a href="#certificates">Certificates</a>
         </nav>
         <div className="hero-content">
-          <p className="eyebrow">Visual CV - IT support and systems operations</p>
+          <p className="eyebrow">IT support and systems operations</p>
           <h1 id="hero-title">Jeffrey Peasah Darkwah</h1>
           <p className="hero-copy">
             IT Support Engineer in Accra, Ghana, with hands-on Active Directory,
@@ -258,12 +258,18 @@ export default function Home() {
           <p className="section-kicker">Profile architecture</p>
           <h2>Built around reliable systems, clear support, and accountable IT.</h2>
         </div>
-        <p>
-          The CV points to a practical operator: someone who can handle user
-          support volume, configure Microsoft environments and managed devices,
-          document incidents, and support regulated banking-style operations
-          without losing sight of the people using the systems.
-        </p>
+        <div className="profile-copy">
+          <p>
+            The profile points to a practical operator: someone who can handle
+            user support volume, configure Microsoft environments and managed
+            devices, document incidents, and support regulated banking-style
+            operations without losing sight of the people using the systems.
+          </p>
+          <p className="personal-note">
+            Away from the desk, I enjoy tennis and usually play regularly. It
+            keeps me active, competitive, and disciplined.
+          </p>
+        </div>
       </section>
 
       <section className="band">
@@ -385,7 +391,7 @@ export default function Home() {
 
       <footer>
         <div className="wrap footer-inner">
-          <p>Jeffrey Peasah Darkwah - Visual CV</p>
+          <p>Jeffrey Peasah Darkwah</p>
           <p>Focused on dependable support, secure systems, and audit-ready IT operations.</p>
         </div>
       </footer>
