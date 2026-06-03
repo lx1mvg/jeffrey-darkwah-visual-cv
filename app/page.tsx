@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { TechBackdrop } from "./tech-backdrop";
 
 const highlights = [
   {
@@ -15,7 +16,7 @@ const highlights = [
   },
   {
     value: "2026",
-    label: "current role in IT service desk and systems support",
+    label: "current role across service desk, systems support, and Intune MDM",
   },
 ];
 
@@ -44,6 +45,8 @@ const skillGroups = [
       "Windows Server",
       "DNS and DHCP",
       "Microsoft 365",
+      "Microsoft Intune MDM",
+      "Endpoint compliance",
       "LAN/WAN fundamentals",
       "Backup and recovery",
       "IT asset management",
@@ -91,6 +94,7 @@ const skillSignals = [
   { label: "Active Directory", level: "92%" },
   { label: "Service Desk Operations", level: "90%" },
   { label: "Windows Server", level: "78%" },
+  { label: "Microsoft Intune MDM", level: "72%" },
   { label: "IT Controls and Audit Support", level: "74%" },
   { label: "Excel Dashboards", level: "68%" },
 ];
@@ -103,6 +107,7 @@ const experience = [
     points: [
       "Triages incidents and service requests by impact, urgency, and SLA target.",
       "Coordinates P1/P2 incidents, stakeholder updates, escalation, and post-incident reporting.",
+      "Set up and configured Microsoft Intune MDM for device enrollment, configuration profiles, compliance policies, and managed endpoint oversight.",
       "Supports release management with deployment readiness, post-release checks, and user preparation.",
       "Provides cybersecurity and audit support through access logs, incident evidence, and compliance documentation.",
     ],
@@ -211,6 +216,7 @@ export default function Home() {
           src="/career-system.png"
           alt="Abstract network map of servers, service tickets, dashboards, and security controls"
         />
+        <TechBackdrop />
         <div className="hero-overlay" />
         <nav className="hero-nav" aria-label="CV sections">
           <a href="#qualifications">Qualifications</a>
@@ -223,12 +229,13 @@ export default function Home() {
           <h1 id="hero-title">Jeffrey Peasah Darkwah</h1>
           <p className="hero-copy">
             IT Support Engineer in Accra, Ghana, with hands-on Active Directory,
-            Windows Server, ITSM, banking application support, and audit-ready
-            operations experience.
+            Windows Server, Microsoft Intune MDM, ITSM, banking application
+            support, and audit-ready operations experience.
           </p>
           <div className="hero-actions" aria-label="Profile focus areas">
             <span>Active Directory</span>
             <span>Windows Server</span>
+            <span>Intune MDM</span>
             <span>Service Desk</span>
             <span>IT Controls</span>
           </div>
@@ -253,9 +260,9 @@ export default function Home() {
         </div>
         <p>
           The CV points to a practical operator: someone who can handle user
-          support volume, configure Microsoft environments, document incidents,
-          and support regulated banking-style operations without losing sight of
-          the people using the systems.
+          support volume, configure Microsoft environments and managed devices,
+          document incidents, and support regulated banking-style operations
+          without losing sight of the people using the systems.
         </p>
       </section>
 

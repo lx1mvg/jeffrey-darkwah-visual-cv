@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Jeffrey Peasah Darkwah | Visual CV",
   description:
-    "A visual CV for Jeffrey Peasah Darkwah, IT Support Engineer focused on systems support, Active Directory, service operations, and audit-ready IT delivery.",
+    "A visual CV for Jeffrey Peasah Darkwah, IT Support Engineer focused on systems support, Active Directory, Intune MDM, service operations, and audit-ready IT delivery.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
