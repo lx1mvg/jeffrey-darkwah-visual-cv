@@ -1,5 +1,5 @@
 export const CV_URL =
-  "https://drive.google.com/drive/u/2/folders/1wuL8AUJYTExjXL1UYzw3p7EL38-Jg1m-";
+  "https://drive.google.com/file/d/1cH0MQOs5QzKM_mfRL7lpjRqDioQCOK2V/view?usp=drive_link";
 
 export const profile = {
   name: "Jeffrey Peasah Darkwah",
