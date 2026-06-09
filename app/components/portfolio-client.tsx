@@ -142,7 +142,7 @@ function CVCard() {
       </span>
       <span>
         <strong>View My CV</strong>
-        <small>Google Drive link opens in a new tab</small>
+        <small>PDF opens directly in a new tab</small>
       </span>
       <ExternalLink aria-hidden="true" />
     </motion.a>

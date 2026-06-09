@@ -1,5 +1,4 @@
-export const CV_URL =
-  "https://drive.google.com/file/d/1cH0MQOs5QzKM_mfRL7lpjRqDioQCOK2V/view?usp=drive_link";
+export const CV_URL = process.env.NEXT_PUBLIC_CV_URL ?? "/jeffrey-peasah-darkwah-cv.pdf";
 
 export const profile = {
   name: "Jeffrey Peasah Darkwah",
